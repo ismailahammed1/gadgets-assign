@@ -1,16 +1,15 @@
-
-// eslint-disable-next-line no-unused-vars
+// src/App.js
 import React from 'react';
-import './App.css';
-
-import router from './Routes/Router';
+import { ProductProvider } from './components/Context/ProductContext';
 import { RouterProvider } from 'react-router-dom';
+import router from './Routes/Router';
+
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router} />  
-    </div>
+    <ProductProvider>
+      <RouterProvider router={router} />
+    </ProductProvider>
   );
 }
 

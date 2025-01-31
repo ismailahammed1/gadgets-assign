@@ -4,11 +4,12 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 footer sm:footer-horizontal footer-center  text-black">
  <div>
- <a href="/" className="btn btn-ghost text-xl">Gadget Heaven</a>
- <p className="mt-2">Leading the way in cutting-edge technology and innovation.</p>
+ <a href="/" className="btn btn-ghost text-3xl mt-10">Gadget Heaven</a>
+ <p className="mt-2 text-sm">Leading the way in cutting-edge technology and innovation.</p>
+ <hr className='text-gray w-5xl mx-auto' />
  </div>
- <hr className=' w-5xl mx-auto' />
-      <div className="footer sm:footer-horizontal text-base-content p-5">
+
+      <div className="footer sm:footer-horizontal text-base-content mb-10">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Product Support</a>

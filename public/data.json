@@ -1,0 +1,322 @@
+[
+    {
+      "product_id": "001",
+      "product_title": "iPhone 15 Pro",
+      "product_name": "Apple iPhone 15 Pro",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297401/gadgetshaven/6623480bbf6f5a4f1669d75d-restored-apple-iphone-15-pro-unlocked_xyzx42.jpg",
+      "category": "iPhone",
+      "price": 999.99,
+      "description": "The latest iPhone with A17 chip and titanium design.",
+      "specification": ["6.1-inch Super Retina XDR", "A17 Bionic Chip", "128GB Storage"],
+      "availability": true,
+      "rating": 4.8,
+      "other": {
+        "color": "Titanium",
+        "weight": "187g"
+      }
+    },
+    {
+      "product_id": "002",
+      "product_title": "Samsung Galaxy S23",
+      "product_name": "Samsung Galaxy S23",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297435/gadgetshaven/Samsung-Galaxy-S23-Plus-Phantom-Black_nizxlh.jpg",
+      "category": "Phone",
+      "price": 799.99,
+      "description": "Flagship Android phone with Snapdragon 8 Gen 2.",
+      "specification": ["6.1-inch AMOLED", "Snapdragon 8 Gen 2", "256GB Storage"],
+      "availability": true,
+      "rating": 4.7,
+      "other": {
+        "color": "Phantom Black",
+        "weight": "168g"
+      }
+    },
+    {
+      "product_id": "003",
+      "product_title": "MacBook Air M2",
+      "product_name": "Apple MacBook Air M2",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297485/gadgetshaven/macbook-air-m2-1_oeylzi.webp",
+      "category": "Laptop",
+      "price": 1199.99,
+      "description": "Ultra-thin laptop with Apple M2 chip.",
+      "specification": ["13.6-inch Retina Display", "M2 Chip", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.9,
+      "other": {
+        "color": "Space Gray",
+        "weight": "1.24kg"
+      }
+    },
+    {
+      "product_id": "004",
+      "product_title": "Dell XPS 13",
+      "product_name": "Dell XPS 13",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297512/gadgetshaven/ff92e9fe-f947-48fb-b7e3-85316562f40e.png",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Premium ultrabook with InfinityEdge display.",
+      "specification": ["13.4-inch 4K Display", "Intel Core i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.6,
+      "other": {
+        "color": "Platinum Silver",
+        "weight": "1.2kg"
+      }
+    },
+    {
+      "product_id": "005",
+      "product_title": "Apple Watch Series 9",
+      "product_name": "Apple Watch Series 9",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297538/gadgetshaven/25cf5972-de29-4b2d-aa55-68758d563f95.png",
+      "category": "Watch",
+      "price": 399.99,
+      "description": "Advanced smartwatch with health monitoring features.",
+      "specification": ["45mm Case", "Blood Oxygen Sensor", "GPS"],
+      "availability": true,
+      "rating": 4.7,
+      "other": {
+        "color": "Midnight",
+        "weight": "38g"
+      }
+    },
+    {
+      "product_id": "006",
+      "product_title": "Samsung Galaxy Watch 6",
+      "product_name": "Samsung Galaxy Watch 6",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297573/gadgetshaven/f245f72a-1daf-41ab-8f6f-4b202826573e.png",
+      "category": "Watch",
+      "price": 299.99,
+      "description": "Smartwatch with advanced fitness tracking.",
+      "specification": ["44mm Case", "ECG Monitoring", "5ATM Water Resistance"],
+      "availability": true,
+      "rating": 4.5,
+      "other": {
+        "color": "Graphite",
+        "weight": "42g"
+      }
+    },
+    {
+      "product_id": "007",
+      "product_title": "AirPods Pro (2nd Gen)",
+      "product_name": "Apple AirPods Pro (2nd Gen)",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297600/gadgetshaven/d05cdd85-d746-4c5d-926c-9578f639efe8.png",
+      "category": "Accessories",
+      "price": 249.99,
+      "description": "Noise-cancelling earbuds with spatial audio.",
+      "specification": ["Active Noise Cancellation", "Spatial Audio", "6hrs Battery Life"],
+      "availability": true,
+      "rating": 4.8,
+      "other": {
+        "color": "White",
+        "weight": "56g"
+      }
+    },
+    {
+      "product_id": "008",
+      "product_title": "Logitech MX Master 3S",
+      "product_name": "Logitech MX Master 3S",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297620/gadgetshaven/e529e4b5-37ce-4a59-8581-faffe2dc9056.png",
+      "category": "Accessories",
+      "price": 99.99,
+      "description": "Wireless mouse designed for productivity.",
+      "specification": ["8000 DPI", "7 Programmable Buttons", "USB-C Charging"],
+      "availability": true,
+      "rating": 4.6,
+      "other": {
+        "color": "Graphite",
+        "weight": "141g"
+      }
+    },
+    {
+      "product_id": "009",
+      "product_title": "iPhone 14",
+      "product_name": "Apple iPhone 14",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297662/gadgetshaven/87196e32-453f-4956-9ec4-fd3973be651c.png",
+      "category": "iPhone",
+      "price": 799.99,
+      "description": "A powerful iPhone with A15 Bionic chip.",
+      "specification": ["6.1-inch Super Retina XDR", "A15 Bionic Chip", "128GB Storage"],
+      "availability": true,
+      "rating": 4.7,
+      "other": {
+        "color": "Blue",
+        "weight": "172g"
+      }
+    },
+    {
+      "product_id": "010",
+      "product_title": "Google Pixel 8 Pro",
+      "product_name": "Google Pixel 8 Pro",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297707/gadgetshaven/c17d5afc-373c-4ee9-a9a0-588292263708.png",
+      "category": "Phone",
+      "price": 899.99,
+      "description": "Google's flagship phone with Tensor G3 chip.",
+      "specification": ["6.7-inch OLED", "Tensor G3", "128GB Storage"],
+      "availability": true,
+      "rating": 4.6,
+      "other": {
+        "color": "Obsidian",
+        "weight": "213g"
+      }
+    },
+    {
+      "product_id": "011",
+      "product_title": "HP Spectre x360",
+      "product_name": "HP Spectre x360",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297748/gadgetshaven/6d5a60dd-95f5-4c7a-97a0-7551a19bfd7e.png",
+      "category": "Laptop",
+      "price": 1499.99,
+      "description": "Convertible laptop with 4K display.",
+      "specification": ["13.5-inch 4K OLED", "Intel Core i7", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.7,
+      "other": {
+        "color": "Nightfall Black",
+        "weight": "1.3kg"
+      }
+    },
+    {
+      "product_id": "012",
+      "product_title": "OnePlus Watch",
+      "product_name": "OnePlus Watch",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297783/gadgetshaven/34e69a2b-35c9-472e-86a8-ddb3a174e24e.png",
+      "category": "Watch",
+      "price": 159.99,
+      "description": "Affordable smartwatch with fitness tracking.",
+      "specification": ["46mm Case", "Heart Rate Monitor", "14-day Battery Life"],
+      "availability": true,
+      "rating": 4.3,
+      "other": {
+        "color": "Midnight Black",
+        "weight": "45g"
+      }
+    },
+    {
+      "product_id": "013",
+      "product_title": "Sony WH-1000XM5",
+      "product_name": "Sony WH-1000XM5",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297825/gadgetshaven/3eaa9dda-6e8a-4ea2-b4ef-aa5a8a27c275.png",
+      "category": "Accessories",
+      "price": 349.99,
+      "description": "Noise-cancelling headphones with exceptional sound quality.",
+      "specification": ["30hrs Battery Life", "Noise Cancellation", "Bluetooth 5.2"],
+      "availability": true,
+      "rating": 4.8,
+      "other": {
+        "color": "Black",
+        "weight": "250g"
+      }
+    },
+    {
+      "product_id": "014",
+      "product_title": "iPad Pro (M2)",
+      "product_name": "Apple iPad Pro (M2)",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297835/gadgetshaven/acad3a8c-5f45-4aa7-9999-d40ab39b1ffe.png",
+      "category": "Tablet",
+      "price": 1099.99,
+      "description": "Powerful tablet with M2 chip and Liquid Retina display.",
+      "specification": ["12.9-inch Liquid Retina", "M2 Chip", "128GB Storage"],
+      "availability": true,
+      "rating": 4.9,
+      "other": {
+        "color": "Silver",
+        "weight": "682g"
+      }
+    },
+    {
+      "product_id": "015",
+      "product_title": "Xiaomi Mi Band 8",
+      "product_name": "Xiaomi Mi Band 8",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297872/gadgetshaven/b7c18f0a-ab74-491d-9bdc-711e223446ed.png",
+      "category": "Watch",
+      "price": 49.99,
+      "description": "Affordable fitness tracker with AMOLED display.",
+      "specification": ["1.62-inch AMOLED", "Heart Rate Monitor", "14-day Battery Life"],
+      "availability": true,
+      "rating": 4.4,
+      "other": {
+        "color": "Black",
+        "weight": "26g"
+      }
+    },
+    {
+      "product_id": "016",
+      "product_title": "Razer Blade 15",
+      "product_name": "Razer Blade 15",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297904/gadgetshaven/60f3af5f-cbf3-4c3b-acd8-58f5beaacc2f.png",
+      "category": "Laptop",
+      "price": 1999.99,
+      "description": "Gaming laptop with RTX 3070 and 240Hz display.",
+      "specification": ["15.6-inch 240Hz", "RTX 3070", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.8,
+      "other": {
+        "color": "Black",
+        "weight": "2.1kg"
+      }
+    },
+    {
+      "product_id": "017",
+      "product_title": "JBL Flip 6",
+      "product_name": "JBL Flip 6",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297932/gadgetshaven/964d9c3a-9c35-419d-86ca-71b75851a902.png",
+      "category": "Accessories",
+      "price": 129.99,
+      "description": "Portable Bluetooth speaker with rich sound.",
+      "specification": ["12hrs Battery Life", "IP67 Waterproof", "Bluetooth 5.1"],
+      "availability": true,
+      "rating": 4.5,
+      "other": {
+        "color": "Blue",
+        "weight": "550g"
+      }
+    },
+    {
+      "product_id": "018",
+      "product_title": "iPhone SE (2022)",
+      "product_name": "Apple iPhone SE (2022)",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738297995/gadgetshaven/39f5ed9e-107f-47a1-9dc9-c889d50951ee.png",
+      "category": "iPhone",
+      "price": 429.99,
+      "description": "Compact iPhone with A15 Bionic chip.",
+      "specification": ["4.7-inch Retina HD", "A15 Bionic Chip", "64GB Storage"],
+      "availability": true,
+      "rating": 4.5,
+      "other": {
+        "color": "Red",
+        "weight": "144g"
+      }
+    },
+    {
+      "product_id": "019",
+      "product_title": "Samsung Galaxy Tab S8",
+      "product_name": "Samsung Galaxy Tab S8",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738298013/gadgetshaven/4537d87e-0fb3-4565-b6a8-a74ef0c58897.png",
+      "category": "Tablet",
+      "price": 699.99,
+      "description": "Premium Android tablet with S Pen included.",
+      "specification": ["11-inch LTPS LCD", "Snapdragon 8 Gen 1", "128GB Storage"],
+      "availability": true,
+      "rating": 4.6,
+      "other": {
+        "color": "Silver",
+        "weight": "503g"
+      }
+    },
+    {
+      "product_id": "020",
+      "product_title": "Fitbit Charge 5",
+      "product_name": "Fitbit Charge 5",
+      "product_image": "https://res.cloudinary.com/dfn1s2ysa/image/upload/v1738298097/gadgetshaven/ce3c8180-8950-4251-a855-91a812cda580.png",
+      "category": "Watch",
+      "price": 179.99,
+      "description": "Advanced fitness tracker with built-in GPS.",
+      "specification": ["Color Touchscreen", "Built-in GPS", "7-day Battery Life"],
+      "availability": true,
+      "rating": 4.4,
+      "other": {
+        "color": "Steel Blue",
+        "weight": "30g"
+      }
+    }
+  ]
