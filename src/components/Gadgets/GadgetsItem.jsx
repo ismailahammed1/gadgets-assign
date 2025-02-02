@@ -1,4 +1,3 @@
-// src/components/GadgetsItem/GadgetsItem.jsx
 import React, { useContext } from 'react';
 import { ProductContext } from '../../context/ProductContext';
 
@@ -13,7 +12,7 @@ const GadgetsItem = ({ productId }) => {
     return <div>Error: {error}</div>;
   }
 
-  const product = products.find((p) => p.product_id === productId);
+  const product = products.find((p) => p.product_id === productId);  // **Fix**: Ensure `product_id` is correct
 
   if (!product) {
     return <div>Product not found</div>;

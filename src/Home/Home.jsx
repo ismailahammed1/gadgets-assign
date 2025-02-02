@@ -1,22 +1,27 @@
-// src/Home/Home.jsx
-import React from 'react';
-import Header from '../components/Header/Header';
-import GadgetsNav from '../components/Gadgets/GadgetsNav';
+import React, { useState } from 'react';
 import GadgetsCard from '../components/Gadgets/GadgetsCard';
+import GadgetsNav from '../components/Gadgets/GadgetsNav';
+import Header from '../components/Header/Header';
 
 
 const Home = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
-    <div>
-      <Header />
-      <div className="flex">
-        <GadgetsNav />
-        <div className="flex-1 p-4">
-          <h1 className="text-3xl font-bold mb-4">Explore Cutting-Edge Gadgets</h1>
-          <GadgetsCard />
-        </div>
+<div>
+<Header />
+<div className="flex">
+      <GadgetsNav onCategorySelect={handleCategorySelect} />
+      <div className="flex-1">
+        <GadgetsCard selectedCategory={selectedCategory} />
       </div>
     </div>
+</div>
   );
 };
 
