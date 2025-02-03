@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../context/ProductContext';
+import { toast, ToastContainer } from 'react-toastify';
+
 
 const GadgetsItem = ({ productId }) => {
   const { products, loading, error } = useContext(ProductContext);
@@ -12,11 +14,15 @@ const GadgetsItem = ({ productId }) => {
     return <div>Error: {error}</div>;
   }
 
-  const product = products.find((p) => p.product_id === productId);  // **Fix**: Ensure `product_id` is correct
+  const product = products.find((p) => p.product_id === productId);
 
   if (!product) {
     return <div>Product not found</div>;
   }
+
+  const handleAddToCart = () => {
+    toast.success(`${product.product_name} has been added to the cart!`);
+  };
 
   return (
     <div className="border p-4 rounded-lg shadow-lg">
@@ -32,9 +38,14 @@ const GadgetsItem = ({ productId }) => {
           ))}
         </ul>
       </div>
-      <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      <button
+        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        onClick={handleAddToCart}
+      >
         Add to Cart
       </button>
+    
+      <ToastContainer/>
     </div>
   );
 };
