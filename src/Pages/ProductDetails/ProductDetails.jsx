@@ -2,9 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { ProductContext } from '../../components/Context/ProductContext';
 import { CartContext } from '../../components/Context/CartContext';
- 
-import { FaRegHeart } from 'react-icons/fa';
 import { WishlistContext } from '../../components/Context/WishlistContex';
+import { FaRegHeart } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -24,10 +25,12 @@ const ProductDetails = () => {
 
   const handleAddToCart = () => {
     addToCart(product);
+    toast.success(`${product.product_name} has been added to your cart!`);
   };
 
   const handleAddToWishlist = () => {
     addToWishlist(product);
+    toast.success(`${product.product_name} has been added to your wishlist!`);
   };
 
   return (
@@ -101,6 +104,8 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+
+      <ToastContainer />
     </div>
   );
 };

@@ -5,9 +5,8 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Dashboard = () => {
-  const { cartItems,  removeFromCart } = useContext(CartContext);
-  const { wishlistItems,  removeFromWishlist } =
-    useContext(WishlistContext);
+  const { cartItems, removeFromCart } = useContext(CartContext);
+  const { wishlistItems, removeFromWishlist } = useContext(WishlistContext);
 
   const [view, setView] = useState("cart");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,25 +14,30 @@ const Dashboard = () => {
   const calculateTotalCost = () => {
     if (!Array.isArray(cartItems)) {
       console.error("cartItems is not an array");
-      return 0.00; 
+      return 0.00;
     }
-  
-  
+
     const total = cartItems.reduce((total, item) => {
-      const price = item.price || 0; 
-      const quantity = item.quantity || 1;  
-  
+      const price = item.price || 0;
+      const quantity = item.quantity || 1;
+
       return total + price * quantity;
     }, 0);
-  
-    return total.toFixed(2); 
+
+    return total.toFixed(2);
   };
-  
 
+  const handleRemoveFromCart = (productId, productName) => {
+    removeFromCart(productId);
+    toast.success(`${productName} has been removed from your cart!`);
+  };
 
-
+  const handleRemoveFromWishlist = (productId, productName) => {
+    removeFromWishlist(productId);
+    toast.success(`${productName} has been removed from your cart!`);
+  };
   const handleCancelPurchase = () => {
-    setIsModalOpen(false); 
+    setIsModalOpen(false);
   };
 
   return (
@@ -45,9 +49,7 @@ const Dashboard = () => {
           <div className="-mt-28 max-w-xl">
             <h1 className="mb-3 mt-5 text-3xl font-bold">Dashboard</h1>
             <p className="m-5">
-              Explore the latest gadgets that will take your experience to the
-              next level. From smart devices to the coolest accessories, we have
-              it all!
+              Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
             </p>
             <div className="flex justify-center space-x-4">
               <button
@@ -74,10 +76,10 @@ const Dashboard = () => {
             <h2 className="text-2xl font-bold mb-4">Cart</h2>
             <div className="flex justify-end gap-5 mb-4">
               <span className="text-xl mt-2 font-bold flex gap-2">
-              Total cost: ${calculateTotalCost()}
+                Total cost: ${calculateTotalCost()}
               </span>
               <button
-                onClick={() => setIsModalOpen(true)} // Open the confirmation modal
+                onClick={() => setIsModalOpen(true)} 
                 className="w-24 bg-gradient-to-r from-[#aa41ff] via-[#ed33f3] to-[#e260f3] hover:from-[#8a2be2] hover:via-[#c71585] hover:to-[#ff1493] text-white rounded-full transition-all duration-300"
               >
                 Purchase
@@ -102,7 +104,7 @@ const Dashboard = () => {
                     <p className="text-lg font-bold">${item.price}</p>
                   </div>
                   <button
-                    onClick={() => removeFromCart(item.product_id)}
+                    onClick={() => handleRemoveFromCart(item.product_id, item.product_name)} 
                     className="btn btn-danger ml-auto"
                   >
                     Delete
@@ -132,7 +134,7 @@ const Dashboard = () => {
                     <p className="text-lg font-bold">${item.price}</p>
                   </div>
                   <button
-                    onClick={() => removeFromWishlist(item.product_id)}
+                    onClick={() => handleRemoveFromWishlist(item.product_id, item.product_name)} 
                     className="btn btn-danger ml-auto"
                   >
                     Delete
@@ -146,12 +148,11 @@ const Dashboard = () => {
 
       {/* Confirmation Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex justify-center items-center bg-transparent z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+        <div className="fixed inset-0 flex justify-center items-center z-50">
+          <div className="p-6 rounded-lg shadow-lg max-w-sm w-full h-56 bg-gray-200">
             <h2 className="text-2xl font-bold mb-4">Confirm Purchase</h2>
             <p className="mb-4">Total Amount: ${calculateTotalCost()}</p>
-            <div className="flex justify-between">
-            
+            <div className="flex justify-between mt-2">
               <button
                 onClick={handleCancelPurchase}
                 className="btn bg-red-500 text-white px-4 py-2 rounded"
@@ -162,7 +163,6 @@ const Dashboard = () => {
           </div>
         </div>
       )}
-
 
       <ToastContainer />
     </div>

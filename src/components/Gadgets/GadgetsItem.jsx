@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../../context/ProductContext';
-import { toast, ToastContainer } from 'react-toastify';
-
+import { toast } from 'react-toastify';
 
 const GadgetsItem = ({ productId }) => {
   const { products, loading, error } = useContext(ProductContext);
@@ -44,8 +43,6 @@ const GadgetsItem = ({ productId }) => {
       >
         Add to Cart
       </button>
-    
-      <ToastContainer/>
     </div>
   );
 };
