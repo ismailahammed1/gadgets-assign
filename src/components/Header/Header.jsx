@@ -3,8 +3,8 @@ import bannerImg from "../../assets/images/banner.jpg";
 const Header = () => {
   return (
     <div className='h-[900px]'>
-      <div className="max-w-7xl mx-auto hero rounded-3xl bg-gradient-to-r from-[#9646d6] via-[#961cfa] to-[#881fdd]">
-        <div className="hero-overlay rounded-3xl min-h-155"></div>
+      <div className="max-w-7xl mx-auto hero rounded-b-3xl bg-[#c407f3]">
+        <div className="hero-overlay rounded-b-3xl min-h-155"></div>
         <div className="flex flex-col justify-start text-neutral-content text-center">
           <div className="-mt-56 max-w-xl">
             <h1 className="mb-3 text-3xl font-bold">
